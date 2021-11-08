@@ -14,15 +14,16 @@
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
 
-<div class="bg-blue-800 w-screen h-screen">
-    <div class="text-black font-bold text-center text-5xl shadow-lg bg-blue-400 p-5">Youtube Sin Restricciones.</div>
-    <div class="text-black font-bold text-center text-2xl shadow-lg bg-blue-400 "> Sin Historial</div>
-    <div class="text-black font-bold text-center text-2xl shadow-lg bg-blue-400 "> Sin Cookies</div>
-
-
-    <input bind:value={Youtube} class="bg-gray-300 p-3 mx-auto w-screen text-center font-bold" placeholder="Entra tu URL Aqui" />
-    <button class="bg-red-600 text-white p-5 w-screen transition-all duration-700 hover:bg-yellow-500" on:click="{getTheExt(Youtube)}">DESBLOQUEAR</button>
-    <iframe class="w-144 h-72 justify-center mx-auto bg-blue-800 shadow-2xl" title="Lmaooo" width="600" height="300" src={Output }></iframe>
-  </div>
+    <div class=" absolute bg-gradient-to-t from-red-600 to-indigo-700 w-screen h-screen">
+      <div class="container"></div>
+      <iframe class=" my-3 w-144 h-72 justify-center mx-auto bg-blue-800 shadow-2xl" title="Lmaooo" width="600" height="300" src="{Output}"></iframe>
+      <div class="mx-auto text-center "><input bind:value={Youtube}  class="w-3/4 p-1 rounded my-2 focus:outline-none shadow  bg-clip-text text-transparent bg-gradient-to-br font-bold ring-black ring-1 from-black to-indigo-800 " type="text" /></div>
+      <div class="mx-auto text-center bg-black cursor-pointer w-max px-2 py-1 rounded-sm text-white" on:click="{getTheExt(Youtube)}">Desbloquear</div>
+    </div>    <div class=" absolute bg-gradient-to-t from-red-600 to-indigo-700 w-screen h-screen">
+      <div class="container"></div>
+      <iframe class=" my-3 w-144 h-72 justify-center mx-auto bg-blue-800 shadow-2xl" title="Lmaooo" width="600" height="300" src="{Output}"></iframe>
+      <div class="mx-auto text-center "><input bind:value={Youtube}  class="w-3/4 p-1 rounded my-2 focus:outline-none shadow  bg-clip-text text-transparent bg-gradient-to-br font-bold ring-black ring-1 from-black to-indigo-800 " type="text" /></div>
+      <div class="mx-auto text-center bg-black cursor-pointer w-max px-2 py-1 rounded-sm text-white" on:click="{getTheExt(Youtube)}">Desbloquear</div>
+    </div>
   
 
