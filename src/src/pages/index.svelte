@@ -1,7 +1,9 @@
 <script>
-  let Youtube = "";
-  let IsActive = false;
-  let Output = "";
+  let youtube = "";
+  let isActive = false;
+  let output = "";
+  
+  function extractVideoURI = (link) => return link.split('/watch?v='); 
   let getTheExt = async (B) => {
     let b = B.split("/watch?v=");
     Output = "https://www.youtube-nocookie.com/embed/" + b[1];
