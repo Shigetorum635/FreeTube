@@ -14,5 +14,5 @@
     </div>
     <div class="font-bold m-2 text-center mx-auto w-2/4 text-blue-600">Este sitio web no se hace cargo de ningun uso inadecuado de la utilidad. Los fines con los que esta creada son ultimamente educativos.</div>
 
-    <iframe title="desbloqueado" src="{output}"></iframe>
+    <iframe clas="w-full h-full" title="desbloqueado" src="{output}"></iframe>
 </div>
