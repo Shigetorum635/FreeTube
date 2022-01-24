@@ -3,50 +3,17 @@
   let isActive = false;
   let output = "";
   
-  function extractVideoURI = (link) => {output = link.split('/watch?v=')[1]}; 
+  function extractVideoURI = (link) => {output = `https://www.youtube-nocookie.com/embed/${link.split('/watch?v=')[1]}`}; 
 </script>
-  <iframe
-    class="my-3 w-144 h-72 justify-center mx-auto bg-blue-800 shadow-2xl"
-    title="Lmaooo"
-    width="600"
-    height="300"
-    src="{output}"
-  ></iframe>
-  <div class="mx-auto text-center">
-    <input
-      bind:value="{youtube}"
-      class="
-        w-3/4
-        p-1
-        rounded
-        my-2
-        focus:outline-none
-        shadow
-        bg-clip-text
-        text-transparent
-        bg-gradient-to-br
-        font-bold
-        ring-black ring-1
-        from-black
-        to-indigo-800
-      "
-      type="text"
-    />
-  </div>
-  <div
-    class="
-      mx-auto
-      text-center
-      bg-black
-      cursor-pointer
-      w-max
-      px-2
-      py-1
-      rounded-sm
-      text-white
-    "
-    on:click="{extractVideoURI(youtube)}"
-  >
-    Desbloquear
-  </div>
+<div>
+    <div class="text-4xl font-bold m-2 text-center text-blue-600">YouTube, FreeTube</div>
+    <div class="font-bold m-2 text-center text-blue-600">Un funcional desbloqueador de YouTube con fines educativos.</div>
+
+    <div class="flex mx-12 text-center md:mx-auto md:w-2/4">
+      <input class="w-3/4 border-2 focus:outline-none p-1" type="text" placeholder="URL" bind:value="{youtube}" />
+      <div class="text-white font-bold bg-blue-500 p-2 hover:bg-blue-600 cursor-pointer selection:select-none" on:click={extractVideoURI(youtube)}>Desbloquear</div>
+    </div>
+    <div class="font-bold m-2 text-center mx-auto w-2/4 text-blue-600">Este sitio web no se hace cargo de ningun uso inadecuado de la utilidad. Los fines con los que esta creada son ultimamente educativos.</div>
+
+    <iframe src="{output}"></iframe>
 </div>
