@@ -2,8 +2,7 @@
   let youtube = "";
   let isActive = false;
   let output = "";
-  
-  function extractVideoURI = (link) => {output = `https://www.youtube-nocookie.com/embed/${link.split('/watch?v=')[1]}`}; 
+  const extractVideoURI = (link) => {output = `https://www.youtube-nocookie.com/embed/${link.split('/watch?v=')[1]}`}; 
 </script>
 <div>
     <div class="text-4xl font-bold m-2 text-center text-blue-600">YouTube, FreeTube</div>
@@ -15,5 +14,5 @@
     </div>
     <div class="font-bold m-2 text-center mx-auto w-2/4 text-blue-600">Este sitio web no se hace cargo de ningun uso inadecuado de la utilidad. Los fines con los que esta creada son ultimamente educativos.</div>
 
-    <iframe src="{output}"></iframe>
+    <iframe title="desbloqueado" src="{output}"></iframe>
 </div>
